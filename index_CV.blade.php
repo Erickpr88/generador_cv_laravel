@@ -23,7 +23,7 @@
             color: white;
         }
         .btn-primary {
-            background-color: var(--secondary-color);
+            background-color: var(--primary-color);
             border: none;
         }
         footer {

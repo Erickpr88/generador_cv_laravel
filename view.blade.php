@@ -7,15 +7,18 @@
                 <div class="col-8">
                     <h1 class="m-0">User Profile</h1>
                 </div>
-                <div class="col-4 text-right">
-                    <a href="{{ route('index') }}" class="add-btn">
-                        <i class="fa fa-home"></i>
-                        <br> Home
+                <div class="col-4 text-right d-flex justify-content-end align-items-center gap-2">
+                    <a href="{{ route('index') }}" class="add-btn d-flex flex-column align-items-center">
+                        <i class="fa fa-home fa-3x"></i>
+                        <span>Home</span>
                     </a>
-                    <a href="{{ route('user.profile.pdf') }}" class="btn btn-danger">
-                        <i class="fa fa-file-pdf"></i> Download PDF
+                    <a href="{{ route('user.profile.pdf') }}" class="add-btn d-flex flex-column align-items-center" target="_blank">
+                        <i class="fa fa-file-pdf fa-3x"></i>
+                        <span>PDF</span>
                     </a>
                 </div>
+
+
             </div>
             <div class="row mb-2">
                 <div class="col-sm-12">
@@ -37,8 +40,8 @@
                     <div class="card-header">
                         <h3 class="card-title">
                             {{ isset($information['personal_info']['first_name']) ? $information['personal_info']['first_name'] : 'Empty' }}
-                            {{ isset($information['personal_info']['last_name']) ? $information['personal_info']['last_name'] : '' }}'s
-                            Profile</h3>
+                            {{ isset($information['personal_info']['last_name']) ? $information['personal_info']['last_name'] : '' }}
+                            </h3>
                     </div>
                     <div class="card-body">
                         <div class="container-fluid wrapper">
